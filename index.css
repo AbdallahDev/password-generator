@@ -1,1 +1,83 @@
-body
+body {
+  background-color: #00a8e8;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
+#container {
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  height: 1207px;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  background-color: #00171f;
+  border: 8px solid #ffffff;
+  border-radius: 40px;
+  width: 723px;
+  height: 813px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxItem {
+  width: 485px;
+  padding: 10px;
+}
+
+#description {
+}
+.line {
+  margin: 0px 0;
+  font-size: 50px;
+  font-weight: bold;
+}
+#line1 {
+  color: rgba(255, 255, 255, 1);
+}
+#line2 {
+  color: rgba(0, 168, 232, 1);
+}
+#line3 {
+  color: rgba(0, 126, 167, 1);
+  font-weight: 100;
+  font-size: 27px;
+}
+
+#properties {
+  font-weight: 800;
+}
+.propertiesBoxItem {
+  /* padding: ; */
+}
+#sliderTxt {
+  margin-bottom: 3px;
+}
+#passwordSizeInput {
+  width: 485px;
+  margin: 0px;
+}
+
+.checkboxGroup {
+  display: flex;
+  width: 485px;
+  justify-content: space-between;
+}
+.checkboxInputAndTitle {
+  display: flex;
+  width: 179px;
+  justify-content: left;
+}
+.inputCheckbox {
+  width: 20px;
+  margin: 0;
+}
+.checkboxTitle{
+    margin-left: 26px;
+}
