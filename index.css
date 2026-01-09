@@ -2,14 +2,15 @@ body {
   background-color: #00a8e8;
   font-family: "Inter", sans-serif;
   color: #ffffff;
+  font-size: large;
 }
 
 #container {
-  margin: auto auto;
+  margin: 51px auto;
   display: flex;
   flex-direction: column;
-  width: 1440px;
-  height: 1207px;
+  width: 1199px;
+  height: 861px;
   justify-content: center;
   align-items: center;
 }
@@ -18,8 +19,8 @@ body {
   background-color: #00171f;
   border: 8px solid #ffffff;
   border-radius: 40px;
-  width: 723px;
-  height: 813px;
+  width: 650px;
+  height: 757px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,6 +63,7 @@ body {
 #passwordSizeInput {
   width: 485px;
   margin: 0px;
+  accent-color: rgba(0, 168, 232, 1);
 }
 
 .checkboxGroup {
@@ -71,13 +73,13 @@ body {
 }
 .checkboxInputAndTitle {
   display: flex;
-  width: 179px;
+  width: 200px;
   justify-content: left;
 }
 .inputCheckbox {
   width: 20px;
   margin: 0;
 }
-.checkboxTitle{
-    margin-left: 26px;
+.checkboxTitle {
+  margin-left: 26px;
 }
