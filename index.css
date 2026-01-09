@@ -29,7 +29,7 @@ body {
 
 .boxItem {
   width: 485px;
-  padding: 10px;
+  margin-bottom: 44px;
 }
 
 #description {
@@ -58,7 +58,7 @@ body {
   /* padding: ; */
 }
 #sliderTxt {
-  margin-bottom: 3px;
+  margin: 0 0 3px 0;
 }
 #passwordSizeInput {
   width: 485px;
@@ -82,4 +82,22 @@ body {
 }
 .checkboxTitle {
   margin-left: 26px;
+}
+
+button {
+  font-size: 25px;
+  font-weight: bold;
+  color: inherit;
+  background-color: rgba(0, 168, 232, 1);
+  border: none;
+  border-radius: 9px;
+  padding: 12px 17px;
+}
+
+#generatePasswordTxt {
+  color: inherit;
+  font-weight: 800;
+  font-size: xx-large;
+  color: rgba(0, 168, 232, 1);
+  margin: 0;
 }
