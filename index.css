@@ -88,9 +88,10 @@ button {
 }
 
 #generatePasswordTxt {
+  text-align: center;
   color: inherit;
   font-weight: 800;
-  font-size: xx-large;
+  font-size: larger;
   color: rgba(0, 168, 232, 1);
   margin: 0;
 }
