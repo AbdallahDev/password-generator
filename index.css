@@ -112,3 +112,10 @@ button {
 .toast-visible {
   opacity: 1;
 }
+
+#note {
+  color: red;
+  font-size: small;
+  text-align: center;
+  margin: 18px 0 0 0;
+}
