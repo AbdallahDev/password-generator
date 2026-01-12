@@ -52,20 +52,39 @@ function generatePassword() {
     generatePasswordCharacters += passwordWholeCharacters[randomIndex];
   }
 
-  return generatePasswordCharacters;
-}
-
-//this function updates the generated password text element
-function updatesPasswordTxt() {
-  generatePasswordTxtEl.textContent = generatePassword();
+  generatePasswordTxtEl.textContent = generatePasswordCharacters;
 }
 
 //updates the generated password txt when the generate password button clicked
 generatePasswordBtnEl.addEventListener("click", function () {
-  updatesPasswordTxt();
+  generatePassword();
 });
 
 //updates the generated password txt when the password size slider updated
 sliderInputEl.addEventListener("input", function () {
-  updatesPasswordTxt();
+  generatePassword();
+});
+
+//copy the generated password txt when the txt clicked
+generatePasswordTxtEl.addEventListener("click", async () => {
+  try {
+    const password = generatePasswordTxtEl.textContent;
+    const toast = document.getElementById("toast");
+
+    toast.className = "toast-visible";
+
+    await navigator.clipboard.writeText(password);
+
+    console.log("password copied successfully.");
+
+    setTimeout(() => {
+      toast.className = "toast-hidden";
+    }, 2000);
+  } catch (error) {
+    console.log("Falied to copy the apssword", error);
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  generatePassword();
 });

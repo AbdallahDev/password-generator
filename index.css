@@ -95,3 +95,20 @@ button {
   color: rgba(0, 168, 232, 1);
   margin: 0;
 }
+
+#toast {
+  color: white;
+  font-weight: 800;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+  margin-top: -95px;
+  text-align: center;
+}
+.toast-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.toast-visible {
+  opacity: 1;
+}
