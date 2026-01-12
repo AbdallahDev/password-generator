@@ -39,10 +39,6 @@ function returnPasswordRequiredCharacters() {
   return passwordRequiredCharacters;
 }
 
-//todo: check if the password should contains numbers
-//todo: check if the password should contains symbols
-
-// todo : generate a password
 //generate the password based on the number of charcters based on the slider
 function generatePassword() {
   const passwordNumberCharacters = numberOfRequiredCharacters;
